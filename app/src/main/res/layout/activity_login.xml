@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".design.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/viewLayoutLine"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="Sign In"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <View
+                android:id="@+id/lineSignIn"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="center"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/emerald_rect_edittext_style"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="@string/signin_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/emerald_rect_edittext_style"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="@string/signin_password"
+                android:inputType="textPassword"
+                android:maxLength="25" />
+
+            <ImageView
+                android:id="@+id/ivBtnSignIn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_signin_button" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
